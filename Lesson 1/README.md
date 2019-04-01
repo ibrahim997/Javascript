@@ -57,4 +57,7 @@ Inclduing Javascript statements directly into the HTML code is done by placing t
   ...Javascript statements...
 </script>
 ```
-  
+### Interpreted and Compiled Languages
+
+Javascript is an interpreted language, rather than a compiled language such as C++ or Java. This means that the Javascript instructions are passed to the browser as plain text and are interpreted sequentially; the do not need to first be "compiled" into condensed machine code only readable by the computer's processor. This capability offers big advantage in that Javascript programs are easy to read, they can be edited swiftly, and their operation can be retested simply be reloading the web page in the browser.
+
