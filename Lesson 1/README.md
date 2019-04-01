@@ -188,4 +188,10 @@ You were introduced with the concepts of server-side and client-side sccripting 
 
 Additionally, you learned about the basic structure of Document Object Model and how Javascript can access particular object and their properties and use the methods belonging to those objects.
 
+## Exercise
 
+Try rewriting the script of *alert(document.title)* to *document.lastModified* property, which contains the date and time that the web page was last changed. (Note - property names are case sensitive - note the "M").
+
+Also see if you can use *document.write()* in place of *alert()* to write the property dirrectly into the page.
+
+Try the code from this lesson in many different browsers and see the differences that might occur when the pages are being displayed in these browsers. 
