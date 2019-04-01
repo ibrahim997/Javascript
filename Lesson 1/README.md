@@ -101,3 +101,29 @@ For example,
 object1.object2.object3
 ```
 represents *object3*, whose parent is *object2*, which itself is a child of *object1*. 
+
+Since the <body> section of a HTML page is represented in the DOM as a child element of the *document* object, you would access it like this:
+  ```javascript
+  window.document.body
+  ```
+The last item in the sequence can also be, istead of another object, a propertyor method of the parent object:
+  ```javascript
+  object1.object2.property
+  object1.object2.method
+  ```
+For example, suppose that you want to access the *title* property of the current document, as specified by the HTML <title>...</title> tags. You simply use:
+  ```javascript
+  window.document.title
+  ```
+
+>Tip
+The *window* object always contains the current browser window, so you can refer to *window.document* to access the current document. As a shortcut, you can also simply use *document* instead of *window.document*; this also refers to the current document.
+If you have several windows open, or if you are using a frameset, separate *window* and *document* object exist for each window or frame. To refer to one of these documents, you need to use the relevant window name and document name belonging to the window or frame.
+
+## Talkig to the User
+
+Methods associated with the *window* and *document* objects which provides a means of talk to the user include:
+```javascript
+window.alert
+```
+The *window* object
