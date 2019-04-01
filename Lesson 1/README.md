@@ -48,4 +48,6 @@ It also can perform actiosn on these elements and create new page elements. A fe
 
 Because Javascript code runs locally inside the user's browser, the page tends to respond quickly to Javascript instructions, enhancing the user's experience and making the application seem more like one of the computer's native applications than simply a web page. Also, Javascript can detect and utilise certain user actions that HTML can't, such as individual mouse clicks and keyboard actions.
 
-## The '<script>' tag
+## The <script> tag
+
+Whenever a user requests a page, any Javscript programs that page contains are passed to the browser along with page content.
