@@ -1,5 +1,7 @@
 #Lesson 1
+
 ##Introduction
+
 /* Hypertext Markup Language is not a programming language but a markup language.
 You can use it to mark parts of your page to indicate to the browser that these
 parts should be shown in a particular way - using bold or italic text, for instancec, or
