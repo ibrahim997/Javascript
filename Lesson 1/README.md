@@ -50,4 +50,9 @@ Because Javascript code runs locally inside the user's browser, the page tends t
 
 ## The <script> tag
 
-Whenever a user requests a page, any Javscript programs that page contains are passed to the browser along with page content.
+Whenever a user requests a page, any Javscript programs that page contains are passed to the browser along with page content. 
+Inclduing Javascript statements directly into the HTML code is done by placing them between <script> and </script> tags within the HTML:
+<script>
+  ...Javascript statements...
+</script>
+  
