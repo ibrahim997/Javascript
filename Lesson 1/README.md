@@ -28,3 +28,10 @@ There are two fundamental ways of adding scripts to otherwise a static web conte
   area fo the website, or retrieving the contents of an email mailbox.
   These scripts are generally run at the web sever before generating the requested web page and serving
   it to the user. This particular way of adding script is known as *server-side* scripting.
+
+> Alternatively, the script rather than being run on a web server, can be delivered to the user's browser
+  along with the markup code that defines the page. Such scripts operate on the page's already-delivered content
+  and is executed by the browser.
+  The many functions these scripts perform include: animating page sections, reformatting page layouts, allowing
+  user to drag and drop items within a page, validating user input on forms, redirecting users to other pages,
+  and much more. This alternative is known as *client-side* scripting.
