@@ -78,3 +78,4 @@ Right at the top of the hierarchical tree is the browser *window* object. This o
 
 The *window* object has various child objects, some of which are visualised in Figure 1.1
 
+![picture alt](https://www.optimizesmart.com/wp-content/uploads/2014/05/Core-DOM.jpg)
