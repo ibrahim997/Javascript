@@ -40,4 +40,7 @@ There are two fundamental ways of adding scripts to otherwise a static web conte
 
 A program written in Javascript can access the elements of a web page and the browser window in which it is running.
 It also can perform actiosn on these elements and create new page elements. A few examples of Javascript capabilities include:
-. Opening a new windows
+* Opening a new windows with specified size, position, and style (for exmaple, whether the window has borders, menus, toolbars etc.)
+* Providing uesr-friendly navigation aids such as drop-down menus
+* Validating data entered into a web form to make sure that it is of an acceptable format before the form is
+  submitted to the web server
