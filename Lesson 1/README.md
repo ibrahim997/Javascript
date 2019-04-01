@@ -159,6 +159,7 @@ The *write* method of the *document* object instead of popping up a dialog, writ
 >Note
 In fact, *document.write* is not a favourable way of writing content to the page; it has loads of limitations, both in terms of functions and in terms of coding style and maintainability. It has largely fallen into disuse for Javascript programming. It will be used for only showing the basic principles of the language.
 
+**See Lesson1-2.html for Javascript statement on *document.write()* **
 ----
 ## Try It Yourself
 ### Lesson1.html
@@ -169,5 +170,22 @@ Have a look at the simple HTML document in Lesson1.html.
 * Make sure to save the file under *.html* extension otherwise the browser will not open it properly.
 
 You should see a pop-up dialog with the message "Good Rising World!" in the dialog.
+
+## Reading a Property of the *document* Object
+
+Previously we talked about how objects in the DOM tree have properties and methods. How the *write* method of the *document* object to output text to the page; now lets try reading one of the properties of the *document* object. Let's use *document.title* property, which contains the title as defined in the HTML <title> element of the page.
+
+Edit *Lesson1.html* in your text editor, and change the call to the *window.alert()* method to the following:
+```javascript
+alert(document.title);
+```
+Notice that *document.title* is NOT now enclosed in quotation marks. If it were, Javascript would infer that you wanted to output the string "document.title" as literal text. Without the quote marks, Javascript sends to the alert() method the value contained in the *document.title* property. Open the file with your browser and see the result.
+
+**See Lesson1-3.html for more Javascript statement on *alert(document.title)* **
+## Summary
+
+You were introduced with the concepts of server-side and client-side sccripting and read contents of Javascript and Document Object Model. You had an overview of the sorts of things Javascript can do to enhance web pages and improve the experiences for users.
+
+Additionally, you learned about the basic structure of Document Object Model and how Javascript can access particular object and their properties and use the methods belonging to those objects.
 
 
