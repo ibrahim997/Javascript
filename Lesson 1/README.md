@@ -76,6 +76,28 @@ Each time a browser loads and displays a page, it creates in memory an internal 
 
 Right at the top of the hierarchical tree is the browser *window* object. This object is a parent or ancestor to everything else in the DOM representation of your page.
 
-The *window* object has various child objects, some of which are visualised in Figure 1.1
+The *window* object has various child objects. The first child object and the one that will be used for more frequently is the *document* object. Any HTML page loaded into the browser creates a *document* object containing all the HTML and other resources that go into making up the displayed page. ALl this information is accessible via Javascript as a parent-child hierarchy of objects, each with its own properties and methods.
 
-![picture alt](https://www.optimizesmart.com/wp-content/uploads/2014/05/Core-DOM.jpg)
+The other children of the *window* object are the *location* object (containing details of the URL of the currently loaded page), the *history* object (containing details of the browser's previously visited pages), and the *navigator* object (which stores details of the browser type, version, and capabilities). We'll look in detail at these objects in Lesson 5.
+
+## Object Notation
+
+The notation to represent objects within the tree uses the dot or period:
+```javascript
+parent.child
+```
+
+As an example, the *location* object is referred to as a the child of the *window* object, so in the DOM it is referred to like this:
+```javascript
+window.location
+```
+
+>Tip
+### Extending DOT Notation
+
+This notation can be extended as many times necessary to represent any object in the tree.
+For example,
+```javascript
+object1.object2.object3
+```
+represents *object3*, whose parent is *object2*, which itself is a child of *object1*. 
