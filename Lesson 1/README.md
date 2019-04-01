@@ -35,3 +35,9 @@ There are two fundamental ways of adding scripts to otherwise a static web conte
   The many functions these scripts perform include: animating page sections, reformatting page layouts, allowing
   user to drag and drop items within a page, validating user input on forms, redirecting users to other pages,
   and much more. This alternative is known as *client-side* scripting.
+
+## Javascript in a Nutshell
+
+A program written in Javascript can access the elements of a web page and the browser window in which it is running.
+It also can perform actiosn on these elements and create new page elements. A few examples of Javascript capabilities include:
+. Opening a new windows
