@@ -42,5 +42,10 @@ A program written in Javascript can access the elements of a web page and the br
 It also can perform actiosn on these elements and create new page elements. A few examples of Javascript capabilities include:
 * Opening a new windows with specified size, position, and style (for exmaple, whether the window has borders, menus, toolbars etc.)
 * Providing uesr-friendly navigation aids such as drop-down menus
-* Validating data entered into a web form to make sure that it is of an acceptable format before the form is
-  submitted to the web server
+* Validating data entered into a web form to make sure that it is of an acceptable format before the form is submitted to the web server
+* Changing how page elements look and behave when particular events occur, such as the mouse cursor moving over them
+* Detecting and exploiting advanced features supported by the particular browser being used, such as third-party plug-ins or native support for new technologies
+
+Because Javascript code runs locally inside the user's browser, the page tends to respond quickly to Javascript instructions, enhancing the user's experience and making the application seem more like one of the computer's native applications than simply a web page. Also, Javascript can detect and utilise certain user actions that HTML can't, such as individual mouse clicks and keyboard actions.
+
+## The '<script>' tag
