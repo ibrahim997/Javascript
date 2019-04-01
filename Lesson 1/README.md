@@ -160,8 +160,14 @@ The *write* method of the *document* object instead of popping up a dialog, writ
 In fact, *document.write* is not a favourable way of writing content to the page; it has loads of limitations, both in terms of functions and in terms of coding style and maintainability. It has largely fallen into disuse for Javascript programming. It will be used for only showing the basic principles of the language.
 
 ----
-# Try It Yourself
-### See Lesson1.html
-----
+## Try It Yourself
+### Lesson1.html
+
+Have a look at the simple HTML document in Lesson1.html.
+> Create your own document called *Lesson1.html* in your text editor and enter the code from Lesson1.html.
+> Save it to a convenient place on your computer, and then open it with your web browser or various web browsers.
+> Make sure to save the file under *.html* extension otherwise the browser will not open it properly.
+
+You should see a pop-up dialog with the message "Good Rising World!" in the dialog.
 
 
