@@ -11,8 +11,8 @@ Once these pages are written they are static by nature. They can't respond to us
 make decisions, or modify the display of their page elements. The markup they contain will always
 be interpreted and dislpayed in the same way whenever a user vists the page.
 
-The World Wide Web contains modern websites that much more and routinely visit are often
-far more than static. They can contain "live" data, such as share prices or flight arrival times,
+The World Wide Web contains modern websites that can do much more and the pages we routinely visit are often
+far from static. They can contain "live" data, such as share prices or flight arrival times,
 animated displays with changing colors and fonts, or interactive capabilities such as the ability
 to click through a gallery of photographs or sort a column of data.
 
@@ -121,7 +121,7 @@ For example, suppose that you want to access the *title* property of the current
 The *window* object always contains the current browser window, so you can refer to *window.document* to access the current document. As a shortcut, you can also simply use *document* instead of *window.document*; this also refers to the current document.
 If you have several windows open, or if you are using a frameset, separate *window* and *document* object exist for each window or frame. To refer to one of these documents, you need to use the relevant window name and document name belonging to the window or frame.
 
-## Talkig to the User
+## Talking to the User
 
 Methods associated with the *window* and *document* objects which provides a means of talk to the user include:
 ```javascript
