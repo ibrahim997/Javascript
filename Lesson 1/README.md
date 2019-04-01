@@ -64,5 +64,17 @@ Javascript is an interpreted language, rather than a compiled language such as C
 
 The examples in this lesson place Javascript code within the <body> section of HTML document, but Javascript code can appear elsewhere in the document too; you can also use <script> to load Javascsript code stored in an external file.
 
+## Introducing the DOM
 
+A Document Object Model (DOM) is a conceptual way of visualising a document and its contents.
+
+Each time a web browser is asked to load and display a page, it needs to interpret (*parse*) the source code contained in the HTML file comprising the page. As part of this parsing process, the browser creates a type of internal model known as DOM representation based on the content of the loaded document. It is this model that the browser then refers to when rendering the visible page. You can use Javascript to access and edit the various parts of the DOM representation, at the same time changing the way the user sees and interacts with the page in view.
+
+## The *window* and *document* Objects
+
+Each time a browser loads and displays a page, it creates in memory an internal representation of the page and all its elements, the DOM. In the DOM, elements of your web page have a logical, heirarchical structure, like a tree of interconnected patent and child objects. THese objects, and their interconnections, form a conceptual model of the web page and the browser that contains and displays it. Each object also has a list of properties that describe it, and a number of methods you can also use to manipulate those properties using Javascript.
+
+Right at the top of the hierarchical tree is the browser *window* object. This object is a parent or ancestor to everything else in the DOM representation of your page.
+
+The *window* object has various child objects, some of which are visualised in Figure 1.1
 
