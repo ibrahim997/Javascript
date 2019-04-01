@@ -164,9 +164,9 @@ In fact, *document.write* is not a favourable way of writing content to the page
 ### Lesson1.html
 
 Have a look at the simple HTML document in Lesson1.html.
-> Create your own document called *Lesson1.html* in your text editor and enter the code from Lesson1.html.
-> Save it to a convenient place on your computer, and then open it with your web browser or various web browsers.
-> Make sure to save the file under *.html* extension otherwise the browser will not open it properly.
+* Create your own document called *Lesson1.html* in your text editor and enter the code from Lesson1.html.
+* Save it to a convenient place on your computer, and then open it with your web browser or various web browsers.
+* Make sure to save the file under *.html* extension otherwise the browser will not open it properly.
 
 You should see a pop-up dialog with the message "Good Rising World!" in the dialog.
 
