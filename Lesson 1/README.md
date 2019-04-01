@@ -117,6 +117,7 @@ For example, suppose that you want to access the *title* property of the current
   ```
 
 >Tip
+#### A Handy Shortcut
 The *window* object always contains the current browser window, so you can refer to *window.document* to access the current document. As a shortcut, you can also simply use *document* instead of *window.document*; this also refers to the current document.
 If you have several windows open, or if you are using a frameset, separate *window* and *document* object exist for each window or frame. To refer to one of these documents, you need to use the relevant window name and document name belonging to the window or frame.
 
@@ -126,4 +127,18 @@ Methods associated with the *window* and *document* objects which provides a mea
 ```javascript
 window.alert
 ```
-The *window* object
+The *window* object, is at the top of the DOM hierarchy and represents the browser window that's displaying the page. WHen you call *alert()* method, the browser pops open a dialog displaying your message, along with an OK button. Here is an example:
+```javascript
+<script>window.alert("Here is my message");</script>
+```
+This is the first working example of the dot notation. Here we are calling the *alert()* method of the *window* object, so our object.method notation becomes *window.alert*.
+
+>Tip
+#### Another Handy Shortcut
+You can leave the *window* object out of the statement. Because the *window* object is the top of the DOM hierarchy (sometimes referred to as **global object**), any methods called without direct reference to their parent object are assumed to belong to the *window* object. Therefore:
+```javascript
+<script>alert("Here is my message")</script>
+```
+Works fine!
+
+----
