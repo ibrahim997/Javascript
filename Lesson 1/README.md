@@ -141,4 +141,27 @@ You can leave the *window* object out of the statement. Because the *window* obj
 ```
 Works fine!
 
+Notice that the line of text inside the parentheses () is contained within quotation marks. These can be single or double qoutes, but they must be there; otherwise, an error will be occur.
+
+This line of code, when executed in the browser, pops up a *window.alert()* dialog.
+
+>Tip
+#### Understanding Model Dialogs
+Until the user clicks OK, they are prevented from doing anything else. A dialog that behaves this way is known as a model dialog.
+
+## document.write()
+
+The *write* method of the *document* object instead of popping up a dialog, writes characters directly into the DOM of the document.
+```javascript
+<script>document.write("Here is another message");<script>
+```
+
+>Note
+In fact, *document.write* is not a favourable way of writing content to the page; it has loads of limitations, both in terms of functions and in terms of coding style and maintainability. It has largely fallen into disuse for Javascript programming. It will be used for only showing the basic principles of the language.
+
 ----
+# Try It Yourself
+### See Lesson1.html
+----
+
+
