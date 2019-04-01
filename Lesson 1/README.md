@@ -1,6 +1,6 @@
-#Lesson 1
+# Lesson 1
 
-##Introduction
+## ntroduction
 
 /* Hypertext Markup Language is not a programming language but a markup language.
 You can use it to mark parts of your page to indicate to the browser that these
