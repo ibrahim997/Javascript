@@ -59,4 +59,52 @@ You sometimes see HTML-style comment notation *<! --* and *-->* inside script el
 This notation is for the benefit of ancient browsers that didn't recognise the <script> tag. This technique is not required.
 
 ## Writing Javascript Statements
-Javascript programs are lists of individual 
+Javascript programs are lists of individual instructions that we refer to as *statements*. To interpret statements correctly, the browser expects to find each statement written on a separate line:
+```jacascript
+this is statement 1
+this is statement 2
+```
+Alternatively, they can be combined in the same line by terminating each with a semicolon:
+```javascript
+this is statement 1; this is statement 2;
+```
+To  ease readability of your code and to help prevent hard-to-find syntax errors, it's good practice to combine both methods by giving each statement its own line and terminating the statement with a semicolon too:
+```javascript
+this is statement 1;
+this is statement 2;
+```
+
+## Commenting Your Code
+Some statements are not intended to be executed by the browser's Javascript interpreter ut are there for the benefit of anybody who may be reading the code. We refer to such lines as *comments*, and there are specific rules for adding comments to your code.
+
+A comment that occupies just a single line of code can be written by placing a double forward slash before the content of the line:
+```javascript
+// This is a comment
+```
+
+> Note
+### Comment Syntax
+Javascript can also use the HTML comment syntax for single-line comments:
+```html
+<!-- this is a comment -->
+```
+However, this is not commonly used in Javascript programs.
+
+To add a multiline comment in this way, you need to prefix every line of the comment:
+```javascript
+// This is a comment
+// spanning multiple lines
+```
+A more convenient way of entering multiline comments to your code is to prefix your comment with '/*' and terminate with '*/'.
+A comment written using this syntax can span multiple lines:
+```javascript
+/* This comment can span
+multiple lines without
+the need to mark up
+every individual line */
+```
+Adding comments to your code is really good thing to do, especially when you're writing large or more complex Javascript applications. Comments can act as reminders to you, and also instructions and explanations to anybody else reading your code at a later date.
+
+> Note
+### File Sie
+Comments add a little to the size of your Javascript source file, and this larger file size can have an adverse effect on page-loading times and code performance. Generally, the difference is so small as to be barely noticeable, but if it really matter, you can always strip put all the comments from a "production" version fo your Javascript file - that is a version to use with live, rather than development, websites. Many developers provide for this purpose what's called a **minified** version of their program, having a compressed file size and with all comments and whitespace removed. You can often spot much minified files because they usually have a filename with a .min.js suffix.
