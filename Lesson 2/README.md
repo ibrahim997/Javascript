@@ -34,9 +34,13 @@ Placing your Javascript code in a separate file offers some important advantages
 ### File Extensions
 It is customary to give files of Javascript code the file extension *.js*, as in this example. However, your included code files can have any extension, and the browser will try to interpret the contents as Javascript.
 
+----
+
 > Caution
 ### Take Care with Markup
 The Javascript statements in the external file must NOT be surrounded by <script> .. </script> tags. In addition, you cannot place any HTML markup within the external file. Just include the raw Javascript code.
+
+----
 
 *Lesson2* shows the simple web page used in Lesson 1, but now with a file of Javascript code included in the <body> section. Javascript can be placed in either the head or body of the HTML page. In fact, it is more common - and generally recommened - for Javascript code to be placed in the head of the page, where it provides a number of functions that can be called from elsewhere in the document. Functions are discussed in Lesson 3.
 
@@ -45,6 +49,8 @@ When Javascript code is added into the body of the document, the code statements
 > Tip
 ### Multiple Scripts
 You are not limited to using a single script element. You can have as many of them on the page as possible.
+
+----
 
 > Note
 ### HTML Comments
@@ -57,6 +63,8 @@ You sometimes see HTML-style comment notation *<! --* and *-->* inside script el
 </script>
 ```
 This notation is for the benefit of ancient browsers that didn't recognise the <script> tag. This technique is not required.
+
+----
 
 ## Writing Javascript Statements
 
@@ -92,6 +100,8 @@ Javascript can also use the HTML comment syntax for single-line comments:
 ```
 However, this is not commonly used in Javascript programs.
 
+----
+
 To add a multiline comment in this way, you need to prefix every line of the comment:
 ```javascript
 // This is a comment
@@ -110,6 +120,8 @@ Adding comments to your code is really good thing to do, especially when you're 
 > Note
 ### File Size
 Comments add a little to the size of your Javascript source file, and this larger file size can have an adverse effect on page-loading times and code performance. Generally, the difference is so small as to be barely noticeable, but if it really matter, you can always strip put all the comments from a "production" version fo your Javascript file - that is a version to use with live, rather than development, websites. Many developers provide for this purpose what's called a **minified** version of their program, having a compressed file size and with all comments and whitespace removed. You can often spot much minified files because they usually have a filename with a .min.js suffix.
+
+----
 
 ## Using Variables
 
