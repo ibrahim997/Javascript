@@ -59,6 +59,7 @@ You sometimes see HTML-style comment notation *<! --* and *-->* inside script el
 This notation is for the benefit of ancient browsers that didn't recognise the <script> tag. This technique is not required.
 
 ## Writing Javascript Statements
+
 Javascript programs are lists of individual instructions that we refer to as *statements*. To interpret statements correctly, the browser expects to find each statement written on a separate line:
 ```jacascript
 this is statement 1
@@ -75,6 +76,7 @@ this is statement 2;
 ```
 
 ## Commenting Your Code
+
 Some statements are not intended to be executed by the browser's Javascript interpreter ut are there for the benefit of anybody who may be reading the code. We refer to such lines as *comments*, and there are specific rules for adding comments to your code.
 
 A comment that occupies just a single line of code can be written by placing a double forward slash before the content of the line:
@@ -106,5 +108,17 @@ every individual line */
 Adding comments to your code is really good thing to do, especially when you're writing large or more complex Javascript applications. Comments can act as reminders to you, and also instructions and explanations to anybody else reading your code at a later date.
 
 > Note
-### File Sie
+### File Size
 Comments add a little to the size of your Javascript source file, and this larger file size can have an adverse effect on page-loading times and code performance. Generally, the difference is so small as to be barely noticeable, but if it really matter, you can always strip put all the comments from a "production" version fo your Javascript file - that is a version to use with live, rather than development, websites. Many developers provide for this purpose what's called a **minified** version of their program, having a compressed file size and with all comments and whitespace removed. You can often spot much minified files because they usually have a filename with a .min.js suffix.
+
+## Using Variables
+
+A variable can be named a "pigeon-hole" where you keep a particular piece of data. Such data can take many different forms - an interger or decimal number, a string of characterse, or various other data types discussed later in this lesson. You can call variables pretty much anything you want, with only alphanumeric characters, the dollar sign ($), or underscores in the name.
+
+> Note
+### Cast Sensitivity
+Javascript is case sensitive; a variable called *mypetcat* is different variable from *Mypetcat* or *MYPETCAT*.
+Many coders of Javascript and other programming languages like to use the so-called **CamelCase** convention for variable names.
+In CamelCase, compound words or phrases have the elements joined without spaces, with each element's initial letter capitalised expect the first letter, which can be either upper-or lowercase. In this example, the variable would be named *MyPetCat* or *myPetCat*.
+
+----
