@@ -15,11 +15,11 @@ A second method and more favourable method is to include your code in a separate
 <script src='mycode.js'></script>
 ```
 The file *mycode.js* contains the Javascript statements, but if youare Javascript file is not in the same folder as the calling script, you can also add a (relative or absolute) path to it:
-```javascript
+```html
 <script src='path/to/mycode.js'></script>
 ```
 or
-```javascript
+```html
 <script src='http://www.example.com/path/to/mycode.js'></script>
 ```
 Placing your Javascript code in a separate file offers some important advantages:
@@ -54,4 +54,5 @@ You sometimes see HTML-style comment notation *<! --* and *-->* inside script el
   <!---
     ... Javascript statements are written here ...
   -->
-<script>
+</script>
+```
