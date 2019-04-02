@@ -134,3 +134,22 @@ Many coders of Javascript and other programming languages like to use the so-cal
 In CamelCase, compound words or phrases have the elements joined without spaces, with each element's initial letter capitalised expect the first letter, which can be either upper-or lowercase. In this example, the variable would be named *MyPetCat* or *myPetCat*.
 
 ----
+
+Suppose you have a variable called *netPrice*. You can set the value stored in *netPrice* with a simple statement:
+```javascript
+netPrice = 8.99;
+```
+We call this *assigning a value* to a variable.
+
+> Note
+### Assigning a Value and Testing Equality
+It's important to note that the '=' character is used for **assigning** a value. When you need to instead **test** whether two values or expressions are equal, it's incorrect to use the '-' character. Instead, you need '==' to test equality:
+```javascript
+if(a == b) { ..do something.. } // correct, test whether a and b are equal
+if(a = b) { ..do something.. } // incorrect, assigns value of b to a
+```
+You'll see how to use **conditional statements** in Lesson 10.
+
+----
+
+Note that 
