@@ -320,7 +320,34 @@ When adding event handlers directly into HTML elements is perfectly valid, doing
 
 ----
 
-Look at the example in onClick.html, for an onClick Event Handler usage.
+Look at the example in onClick.html, for an onClick demo.
 
 The HTML code adds a button to the <body> element of the page and supplies that button with an *onclick* attribute. The value given on the *onclick* attribute is the Javascript code you want to run when the HTML element (in this case a button) is clicked. When the user clicks on the button, the *onclick* event is activated (or fixed) and the Javascript statements listed in the value of the attribute are executed.
 
+In the case of the onClick.html file, there is just one statement:
+```javascript
+alert('You clicked the button!)
+```
+
+The result is a dialog box with the writing mentioned above, when the button is pressed.
+
+> Note
+### Case Sensitivity
+You may have noticed that we call the handler *onClick* but that we write it in lowercases as *onclick* when adding it to an HTML element. This convention has arisen because, although HTML **is not** case sensitive, XHTML **is** case sensitive and requires all HTML elements and attribute names to  be written in lowercase.
+
+----
+
+## *onMouseOver* and *onMouseOut* Event Handlers
+
+When you simply want to detect where the mouse pointer is on the screen with reference to a particular page element, *onMouseOver* and *onMouseOut* can help to do that.
+
+The *onMouseOver* event is fired when the user's mouse cursor enters the region of the screen occupied by the element in question. The *onMouseOut* event, is fired when the cursor leaves the same region.
+
+Look at the example in onMouseOver.html, for onMouseOver demo.
+
+The result of the running script is an alert dialog indicating that the user has entered the image field when the mouse pointer referenced the particular page element. Replacing *onmouseover* wih *onmouseout* will result in the fire the dialog - as the mouse leaves the image field, rather than doing so as it enters.
+
+## Try It Yourself
+### Creating an Image Rollover
+
+Have a look at the simple HTML document in Image_Rollover.html
