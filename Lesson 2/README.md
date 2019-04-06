@@ -152,4 +152,29 @@ You'll see how to use **conditional statements** in Lesson 10.
 
 ----
 
-Note that 
+Note that you don't have to declare the existence of this variable before assigning a value, as you would encounter in other programming languages. However, doing so is possible in Javascript. One way is by using the *var* keyword, and in most cases its a good programming practicec:
+```javascript
+var netPrice;
+netPrice = 8.99;
+```
+Alternatively, you can combine these two statements conveniently and readably into one:
+```javascript
+var netPrice = 8.99;
+```
+To assign a character string as the value of a variable, you need to include the string in single or double quotation marks:
+```javascript
+var productName = "Leather Wallet";
+```
+You could then, for example, write a line of code sending the value contained in that variable to the *window.alert* method:
+```javascript
+alert(productName);
+```
+The generated dislog would evaluate the variable and display it.
+
+> Tip
+### Variable Names
+Choose readable variable names. Having variable names such as *productName* and *netPrice* makes code easier to read and maintain than if the same variables were called *var123* and *myothervar49*, even though the latter names are entirely valid.
+
+----
+
+## Working with Operators
