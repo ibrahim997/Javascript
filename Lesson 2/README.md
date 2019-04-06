@@ -355,4 +355,29 @@ Have a look at the simple HTML document in Image_Rollover.html
 You can use the *onMouseOver* and *onMouseOut* events to change how an image appears while the mouse pointer is above it. To achieve this, you can use *onMouseOver* to change the *src* attribute of the HTML tag <img> element as the mouse cursor enters and *onMouseOut* to change it back as the mouse cursor leaves.
 
 You may notice something new in the syntax used here. Wthin the Javascript statements for *onMouseOver* and *onMouseOut* is the keyword *this*.
+
 When you use *this* within an event handler added via an attribute of an HTML element, *this* refers to the HTML element itself; in this case, you can read it as "this image", and *this.src* refers (using the "dot" notation) to the *src* (source) property of this image object.
+
+In this example we used two images - tick.gif and tick2.gid. You can use any images you have on hand but the demonstration works best if they are the same size and not too large.
+
+Use your editor to create an HTML file containing the code of Image_Rollover.html. You can change the image name tick.gif and tick2.gif to the names of your own two image; just ensure the images are saved in the same folder as the HTML file. Save the HTML file and open it in the browser.
+
+You should see the image change as the mouse pointer enters and changes back as it leaves.
+
+> Note
+### Image Rollovers
+At one time image rollovers were regularly done this way, but these days they can be achieved much more efficiently using Cascading Style Sheets (CSS). Still, it's convenient way to demonstrate the use of the *onMouseOver* and *onMouseOut* event handlers. You'll learn about using CSS with Javascript in later lessons.
+
+## Summary
+
+You learned about various ways to include Javascript code in your HTML code.
+
+You studied how to declare variables in Javascript, assign values to those variables, and manipulate them using arithmetic operators.
+
+Finally, you used some of Javascript event handlers and learned how to detect certain actions of the user's mouse.
+
+## Exercises
+
+Startitng with onMouseOver.html, remove the *onMouseOver* handler from the <img> element. Instead add an *onClick* handler to set the title property of the image to *My New Title*. (Hint: you can access the image title using *this.title*).
+
+Can you think of an easier way to test whether your script has correctly set the new image title?
