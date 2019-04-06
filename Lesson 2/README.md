@@ -206,4 +206,79 @@ var itemsPerBox = 12;
 var itemsToBeBoxed = 40;
 var itemsInLastBox = itemsToBeBoxed % itemsPerBox;
 ```
-In this example, the variable *itermsInLastBox* would contain the number 4
+In this example, the variable *itermsInLastBox* would contain the number 4 after the last statement completes.
+Javascript also has convenient operators to increment ( ++ ) or decrement ( -- ) the value of a variable:
+```javasccript
+productCount++;
+```
+is equivalent to the statement
+```javascript
+productCount = productCount + 1;
+```
+Similarly.
+```javascript
+items--;
+```
+is just the same as
+```javascript
+items = items - 1;
+```
+
+> Tip
+### Combining Operators
+If you need to increment or decrement a variable by a value other than one, Javascript also allows you to combine other arithmetic operators with the = operator - for example, ( += ) and ( -= ). 
+The following two lines of code are equivalent:
+```javascript
+total = total + 5;
+total += 5;
+```
+So are these two:
+```javascript
+counter = counter - step;
+counter -= step;
+```
+You can use this notation for other arithmetic operators such as multiplication and division too:
+```javascript
+price = price * uplift;
+price *= uplift;
+```
+
+----
+
+## Operator Procedure
+
+When you use several operators in the same calculation, Javascript users precedence rules to determine in what order that calculation should be done. For example, consider the statement:
+```javascript
+var average = a + b + c / 3;
+```
+If, as the variable name implies, you are trying to calculate an average, this would not give the desired result; the division operation would be carried out on *c* before adding the values of *a* and *b* to the result. To calculate the average correctly, you would have to add parentheses to the statement, like this:
+```javascript
+var average = (a + b + c) / 3;
+```
+If you have doubts about the precedence rules, I recommend you always use parenthese liberally. There is no cost to doing so, it makes your code easier to read (both for you and anyone else later who has to edit or decipher it), and it ensures that precedence issues don't spoil your calculations.
+
+> Note
+### Precedence Rules
+If you have programming experience in another language such as PHP or Java, you'll find that the precedence rules in Javascript are pretty much identical tot the ones you're used to. Find out more by doing some online research.
+
+----
+
+## Using the + Operator with Strings
+
+Arithmetic operators don't make sense if the variables they operate on contain strings rather than numeric values. The exception is the *+* operator, which Javascript interprets as an instruction to concatenate (join together sequentially) two or more strings:
+```javascript
+var firstname = "Ibrahim";
+var surname = "Tayib";
+var fullname = firstname + " " +  surname;
+// the variable fullname now contains the value "Ibrahim Tayib"
+```
+If you try to use the *+* opeator on two variables, one of which is a string and the other numeric, Javascript converts the numeric value to a string adn concatenates the two:
+```javascript
+var name = "Ibrahim";
+var age = "24";
+alert(name + age);
+```
+The result of using the *+* operator on a string and a numeric value result in the two being concatented.
+
+
+
