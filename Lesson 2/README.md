@@ -283,4 +283,23 @@ The result of using the *+* operator on a string and a numeric value result in t
 ## Try It Yourself
 ### Convert Celsius to Fahrenheit
 
+Have a look at the simple HTML document in Convert_Celsius_To_Fahrenhiet.html
+
+To convert a temperature in degrees Celsius to one measure in degrees Fahrenheit, you need to multiply by 9, divide by 5, and then add 32. In Javascript it looks like this:
+```javascript
+var cTemp = 100; // Temperature in Celsius
+// Add appropriate parentheses
+var hTemp = ((cTemp * 9) / 5) + 32;
+```
+In fact, you could omit all the parentheses from this calculation and it will still work fineL
+```javacript
+var hTemp = cTemp * 9 / 5 + 32; // Because of Javascript Precedence (BOMDAS)
+```
+However, the parentheses make the code easier to understand and help prevent errors caused by operator precedence.
+
+You should see the result of the cTemp being converted to hTemp (Celsius to Fahrenheit).
+
+## Capturing Mouse Events
+
+
 
