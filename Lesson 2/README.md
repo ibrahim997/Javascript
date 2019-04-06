@@ -301,5 +301,26 @@ You should see the result of the cTemp being converted to hTemp (Celsius to Fahr
 
 ## Capturing Mouse Events
 
+One of the fundamental purposes of Javascript is to help make your web pages more interactive for the user. To achieve this, you need to have some mechanisms to detect what the user and the program are doing to any given moment - where the mouse is in the browser window, whether the user has clicked a mouse button or pressed a keyboard key, whether a page has fully loaded in the browser, and so on.
 
+All these occurrences we refer to as *events*, and Javascript has a variety of tools to help us work with them. Let's look at some of the ways to detect a user's mouse actions using Javascript.
+
+Javascript deals with events using so-called handlers. We are going to investigate three of these: *onClick*, *onMouseOver*, and *onMouseOut*.
+
+## The *onClick* Event Handler
+
+The *onClick* event handler can be applied to nearly all HTML elements visible on a page. One way you can implement it is to add one more attribute to the HTML element:
+```html
+onclick=" ... some Javascript code .. "
+```
+
+> Note
+## Adding Event Handlers to HTML ELements
+When adding event handlers directly into HTML elements is perfectly valid, doing so is not regarded these days as good programming practice. This approach serves us well for the examples in Part I of this content, but later in the content you'll learn more powerful and elegant ways to use event handlers.
+
+----
+
+Look at the example in onClick.html, for an onClick Event Handler usage.
+
+The HTML code adds a button to the <body> element of the page and supplies that button with an *onclick* attribute. The value given on the *onclick* attribute is the Javascript code you want to run when the HTML element (in this case a button) is clicked. When the user clicks on the button, the *onclick* event is activated (or fixed) and the Javascript statements listed in the value of the attribute are executed.
 
