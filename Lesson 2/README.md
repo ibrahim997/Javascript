@@ -351,3 +351,8 @@ The result of the running script is an alert dialog indicating that the user has
 ### Creating an Image Rollover
 
 Have a look at the simple HTML document in Image_Rollover.html
+
+You can use the *onMouseOver* and *onMouseOut* events to change how an image appears while the mouse pointer is above it. To achieve this, you can use *onMouseOver* to change the *src* attribute of the HTML tag <img> element as the mouse cursor enters and *onMouseOut* to change it back as the mouse cursor leaves.
+
+You may notice something new in the syntax used here. Wthin the Javascript statements for *onMouseOver* and *onMouseOut* is the keyword *this*.
+When you use *this* within an event handler added via an attribute of an HTML element, *this* refers to the HTML element itself; in this case, you can read it as "this image", and *this.src* refers (using the "dot" notation) to the *src* (source) property of this image object.
