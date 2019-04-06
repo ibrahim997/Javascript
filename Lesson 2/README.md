@@ -178,3 +178,32 @@ Choose readable variable names. Having variable names such as *productName* and 
 ----
 
 ## Working with Operators
+
+The values stored in variables aren't going to be much use to you unless you can manipulate them in calculations.
+
+## Arithmetic Operations
+
+First Javascript allows you to carry out operations using the standard arithmetic operators of addition, subtraction, multiplication and division:
+```javascript
+var theSum = 4 + 3;
+```
+After this statement is executed, the variable *theSum* will contain a value of 7. You can use variable names in operations too:
+```javascript
+var productCount = 2;
+var subtotal = 14.98;
+var shipping = 2.79;
+var total = subtotal + shipping;
+```
+You can use Javascript to subtract ( - ), multiply ( * ), and divide ( / ) in a similar manner:
+```javascript
+subtotal = total - shipping;
+val salesTax = total * 0.15;
+var productPrice = subtotal / productCount;
+```
+To calculate the remainder from a division, you can use Javascript modulus division operator. It is denoted by the ( % ) character:
+```javascript
+var itemsPerBox = 12;
+var itemsToBeBoxed = 40;
+var itemsInLastBox = itemsToBeBoxed % itemsPerBox;
+```
+In this example, the variable *itermsInLastBox* would contain the number 4
