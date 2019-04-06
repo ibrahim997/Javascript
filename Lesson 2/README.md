@@ -280,5 +280,7 @@ alert(name + age);
 ```
 The result of using the *+* operator on a string and a numeric value result in the two being concatented.
 
+## Try It Yourself
+### Convert Celsius to Fahrenheit
 
 
