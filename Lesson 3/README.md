@@ -72,3 +72,43 @@ Upto now, all our Javascript code examples were placed in the <body> part of HTM
 > Caution
 ### Multiple Definitions
 Ensure your Javascript functions are not defined more than once. This can sometimes happen when you include more than one sccript element in a page, especially where one or more of these references an external file of Javascript commands.
+If you call a function that has been defined multiple times, Javascript won't issue an error message. It will simply use the latest definition of the function, so these can be difficult bugs to find!
+
+----
+Look at Functions_in_the_Page_Head.html example to see a function defined in the head section of an HTML page.
+From the page you see is the function definition has been placed inside a <script> element in the page head, but the call function has been made in a different place entirely - on this occasion, from the *onClick* event handler of a button in the body section of the page.
+The result of clicking the button is an alert dialog with the text "Hello".
+
+## Passing Arguments to Functions
+
+It would be rather limiting if your functions could only behave in an identical fashion each and every time they were called, as would be the case in the preceding example.
+
+Fortunately, you can extend the capabilities of functions by passing data to them. You can do this when the function is called, by passing it one or more arguments.
+```javascript
+functionName(arguments);
+```
+Let's create a simple function to calculate the cube of a number and display the result.
+```javascript
+function cube(x) {
+  alert(x * x * x);
+}
+```
+Now you can call the function by replacing x with a number. Calling the function as in the following line results in a dialog being displayed containing the results of the calculation, in this instance 27:
+```javascript
+cube(3); // Answer is 27.
+```
+Ofcourse, you could easily pass a *variable name* as an argument. The following code would also generate a dialog containing the number 27:
+```javascript
+var length = 3; // Variable name "length"
+cube(length); // Calling the function with argument being the variable name "length"
+```
+
+> Note
+### What is in a Name?
+You will sometimes hear or see the word *parameters* used in place of argument, but it means the same thing. *Parameters* are the values the function expects, and are baked into function definitions from the start, whereas *arguments* are the valyes provided for those parameters when the function is called. The two are used interchangebly by programmers.
+
+----
+
+## Multiple Arguments
+
+Functions are not limited to a single argument.
