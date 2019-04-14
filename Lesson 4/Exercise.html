@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<htmL>
+    <head>
+        <title>Temperature Conversion</title>
+        <script>
+            function buttonFahrenheit(buttonCelsius = 0) {
+                // Let us be generous with parentheses
+                var htemp = ((buttonCelsius * 9) / 5) + 32;
+                alert(buttonCelsius + " Degrees Celsius is " + htemp + " Degrees Fahrenheit.");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="0" onclick="buttonFahrenheit()"/>
+        <input type="button" value="10" onclick="buttonFahrenheit(this.value)"/>
+        <input type="button" value="20" onclick="buttonFahrenheit(this.value)"/>
+        <input type="button" value="30" onclick="buttonFahrenheit(this.value)"/>
+    </body>
+</htmL>
