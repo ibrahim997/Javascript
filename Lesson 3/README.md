@@ -127,3 +127,23 @@ Make sure your function calls contan enough argument values to match the paramet
 ----
 
 It's important to note that the names given to parameteres in the definition of your function have nothing to do with the names of any variables whose values are passed to the function.The variable names in the argument list act like placeholders for the actual values that will be passed when the function is called. The names that you give to arguments are only used inside the function definition to specify how it works.
+
+## Try It Yourself
+
+### A Function to Output User Messages
+This exercise is about a function that can send te user a message about which button the user has clicked on. You place the function definition in the <head> section of the page and call it with multiple arguments.
+
+Here is the function:
+```javascript
+  function buttonReport(buttonId, buttonName, buttonValue) {
+      // Information about the id of the button
+      var userMessage1 = "Button id: " + buttonId + "\n";
+      // Information about the button name
+      var userMessage2 = "Button name: " + buttonName + "\n";
+      // Information about the button value
+      var userMessage3 = "Button value: " + buttonValue;
+      // Alert the User
+      alert(userMessage1 + userMessage2 + userMessage3);
+  }
+  ```
+The function *buttonReport* takes three arguments, those being the id, name and value of the button element that has been clicked on. With each of these three pieces of information, a short message is constructed. These three messages are then concatenated into a single string which is passed to the *alert()* method to pop open a dialog containing the information.
