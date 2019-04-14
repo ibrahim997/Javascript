@@ -173,3 +173,67 @@ function cube(x) {
 }
 ```
 Instead of using an *alert()* dialog within the function, as in the previous example, this time the required result is prefixed with the *return* keyword. To access this value from outstide the function, you simply assign to a variable the value returned by the function:
+```javascript
+var answer = cube(3);
+```
+After this line is executed, the variable *answer* will have the value 27.
+
+Remeber to call a function, you must add the parentheses to the function name as in the preceding example. If you use the function name without the parentheses, Javascript will assume you are referring to the definition of the function, rather than the valye it returns. Suppose that in the preceding code snippet, you had instead used:
+```javascript
+var answer = cube;
+```
+When this line is executed, instead of the number 27, the varibale answer will contain an identical function definition to that of cube(), so the following line, when executed, would alert a value of 27:
+```javascript
+alert(answer(3)); // Alerts 27
+```
+
+> Note
+### Data Types of Return Values
+The vales returned by functions are not restricted to numerical quantities as in this example. In fact, functions can return values having any of the data types supported by Javascript. If no return statement is included in a function, it will by default return a value of *undefined*.
+
+----
+
+> Tip
+### Passing Return Values to Other Statements
+Where a function returns a value, you can use the function call to pass the reeturn value directly to another statement in the code. For example, instead of:
+```javascript
+var answer = cube(3);
+alert(answer);
+```
+you simply use:
+```javascript
+alert(cube(3));
+```
+The value of 27 returned from the functon call *cube(3)* immediately becomes the argument passed to the *alert()* method.
+
+----
+
+## Anonymous Functions
+
+There is a more convenient and elegant way to define a function, without having to create a separate named function and then later assign assign it by name to the required method.
+
+In a previous example, you used this line of code:
+```html
+<input type="button" value="Say Hello" onclick="sayHello()" />
+```
+You'll recall that this was the function definition:
+```javascript
+function sayHello() {
+  alert("Hello");
+}
+```
+An alternative way to achieve the same effect would be like this:
+```javascript
+var sayHello = function () { alert("Hello"); };
+```
+Because you have not needed to give a name to your function prior to assigning it, this technique is referred to as using an anonymous function. This way of defining functions is concise and useful and will see more in the lessons to come.
+
+## Summary
+
+In this lesson you learnt about what functions are and how to create them in Javascript. You learned how to call functions from within your code and pass information to those functions in the form of arguments. You also learnt how to return information from a function to its calling statement. And finally anonymous functions.
+
+## Exercise
+
+Write a function to take a temperature value in Celsius as an argument and return the equivalent temperature in Fahrenheit, basing on the code from Lesson 2.
+Test your function in an HTML page having three buttons that, when clicked, pass values of 10, 20 and 30 degrees Celsius, respectively, to the function.
+
