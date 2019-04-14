@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Variable Scope</title>
+    </head>
+    <body>
+        <script>
+            var a = 10; var b = 10;
+            function showVars() {
+                var a = 20; // Declare a new local variable 'a'
+                b = 20; // Change the value of global variable 'b'
+                return "Local variable 'a'' = " + a + "\nGlobal variable 'b' = " + b; 
+            }
+            var message = showVars();
+            alert(message + "\nGlobal variable 'a' = " + a);
+        </script>
+    </body>
+</html>
