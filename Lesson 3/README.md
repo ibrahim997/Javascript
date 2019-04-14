@@ -111,4 +111,19 @@ You will sometimes hear or see the word *parameters* used in place of argument, 
 
 ## Multiple Arguments
 
-Functions are not limited to a single argument.
+Functions are not limited to a single argument. When you want to send multiple arguments to a function, all you need to do is separate them with commas:
+```javascript
+function times(a, b) {
+  alert(a * b);
+}
+times(3, 4); // alertst '12'
+```
+You can use as many arguments as you need.
+
+> Caution
+### Count Your Arguments
+Make sure your function calls contan enough argument values to match the parameters specified in the function definition. If any of the parameters in the definition are left without a value, Javascript may issue an error, or the function may perform incorrectly. If your function call is issued with too many arguments, Javascript will ignore the extra ones.
+
+----
+
+It's important to note that the names given to parameteres in the definition of your function have nothing to do with the names of any variables whose values are passed to the function.The variable names in the argument list act like placeholders for the actual values that will be passed when the function is called. The names that you give to arguments are only used inside the function definition to specify how it works.
