@@ -28,3 +28,26 @@ The range of situatiosn in which a variable is defined is known as the *scope* o
 
 ## Try It Yourself
 
+### Demonstrating the Scope of Varibales
+
+To illustrate the issue of a variable's scope, let's look at the following piece of code:
+```javascript
+var a = 10; var b = 10;
+function showVars() {
+    var a = 20; // Declare a new local variable 'a'
+    b = 20; // Change the value of global variable 'b'
+    return "Local variable 'a'' = " + a + "\nGlobal variable 'b' = " + b; 
+}
+var message = showVars();
+alert(message + "\nGlobal variable 'a' = " + a);
+```
+Within the *showVars()* function, two variables, *a* and *b* are manipulated. The varibale *a* is defined inside the function; this is a local variable that exists only inside the function, quite separate from the global variable *a* that is declared outside the function or at the beginning of the script.
+
+The variable *b* is not declared inside the function, but oustide; it is a *global* variable.
+
+The "Demonstrating_the_Scope_of_Variables.html shows the preceding code with an HTML page.
+
+When the page is laoded, *showVars()* returns a message string containing information about the updated values of the two variables *a* and *b*, as they exist inside the function - *a* with local scope and *b* with global scope.
+
+A message about the current value of the other global variable, *a*, is then appended to the message, and the message displayed to the user.
+
