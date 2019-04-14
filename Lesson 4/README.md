@@ -51,3 +51,65 @@ When the page is laoded, *showVars()* returns a message string containing inform
 
 A message about the current value of the other global variable, *a*, is then appended to the message, and the message displayed to the user.
 
+## Using the *this* keyword
+
+You may recall using such a keyword in Lesson 2, while you were defining an inline event handler:
+```html
+<img src="tick.gif" alt="tick" onmouseover="this.src='tick2.gif';" />
+```
+When used in that way, *this* refers to the HTML element itself - in the preceding example the <img> element.
+
+When you use the *this* keyword inside a function, the keyword *this* refers to whatever "owns" the function - something we refer to as the *patent scope* of the function.
+
+In the "Try It Yourself" above example, the *showVars()* function was created at the "top level". In other words, it belongs to the global object (the object that also owns any variables that are in global scope). In a web browser, the global object is normally the browser's *window* object.
+
+So what would happen if you asked the function to return the value of *this.a*, as in the following code snippet?
+```javascript
+function showVars() {
+  var a = 20;
+  var b = 20;
+  return "this.a = " + this.a + "\nLocal variable 'a' = " + a + "\nGlobal variable 'b' = " + b;
+}
+
+var message = showVars();
+alert(message + "\nGlobal variable 'a' = " + a);
+```
+Since *this* refers to the global object, *this.a* refers to the variable *a*, which is in the global scope.
+
+## Declaring Variables Using *let*
+
+Until recently, Javascript had only two types of scope - namely, the *function* scope and the *global* scope.
+
+Having only these two types was a nuisance to many programmers, especially those who are more familiar with other languages. Many other programming languages allow variables to have so-called block scope (a block in Javascript constitutes the entire contents of a pair of curly braces {}). A variable with block scope would be accessible only to a program statement occuring within the same block as the variable definition.
+
+Recent updates to the Javascript language have seen this omission corrected with a new keyword *let*, which allows you to define a variable with exactly this block scope.
+
+Now look at the following code snippet. Suffice to say that such a statemnt allows your program to execute a block of statements only if a particular condition is met.
+```javascript
+function myFunction(x) {
+  var y = x;
+  if (x > 50) {
+    var y = 10;
+    alert("Inner y = " + y); // Alert 10
+  }
+  alert("Outer y = " + y); // Alert 10
+  .. more statements ..
+}
+```
+What will the program display in the alert dialog, if we call the function with an argument of 100? The valye of y will initially be set to 100, with *function scope*; that is, its value will be accessible anywhere within the function.
+
+Since the value of x is greater than 50, the inner block of code will be executed. The first command within that inner block will redeclare y, and since the *var* keyword gives the declared variable function scope, the new value will be accessible throughout the entire function.
+The result is that, when you leave the inner code block and the second alert is executed, the new value of y (that is, a value of 10) will be displayed. Any further lines of code in the outer block will "see" this new value of y.
+
+Now consider what happens when *let* is used instead in the inner block:
+```javascript
+function myFunction(x) {
+  var y = x;
+  if (x > 50) {
+    let y = 10;
+    alert("Inner y = " + y); // Alert 1
+  }
+  alert("Outer y = " + y); // Alert 10
+  .. more statements ..  
+}
+```
