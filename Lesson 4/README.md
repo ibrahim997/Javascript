@@ -107,9 +107,49 @@ function myFunction(x) {
   var y = x;
   if (x > 50) {
     let y = 10;
-    alert("Inner y = " + y); // Alert 1
+    alert("Inner y = " + y); // Alert 10
   }
-  alert("Outer y = " + y); // Alert 10
+  alert("Outer y = " + y); // Alert 100
   .. more statements ..  
 }
 ```
+Here the variable y declred within the inner code block has only *block scope*; when execution leaves the inner block and performs the second alert, a value of 100 will be reported for y and seen by any subsequent lines of code in the outer block.
+
+## Declaring Constants with the *const* Keyword
+
+Sometimes you need to store a value that simply can't be changed by later code. Examples might include, for instance, the initial setup parameteres of your program, such as the width and the height of a page element for displaying output.
+
+You can achieve this result by using the keyword *const*. A *const* declaration creates a *constant* - a value that can't be changed by reassignment later in the code. Any attempt to change the value of a variable declared using *const* will result in an error:
+```javascript
+function myFunction() {
+  const x = 300;
+  x = 400; // An error is generated at this line of code
+  
+  ... more statements ...
+}
+```
+
+## Try It Yourself
+
+### Checking Out const
+
+Let's look at how *const* operates. We will be using Google Chrome for this exercse.
+
+Instead of writing code in a text file, open the Javascript Console for your browser. In this case of Chrome you can do that by pressing CTRL+SHIFT+J.
+
+These are the steps to take and write down each result from the tasks in each step below:
+1. Define a constant using the *const* keyword and choose a numeric value. Note: The console will issue *undefined* because the declaration of *const* does not return a value. For example: const MYCONST = 10
+2. Try to redefine the value of the constant. For example: MYCONST = 11
+3. Try to reassign a new value to the constant. For example: var MYCONST = 9
+4. Try to reinitialise the constant with a new value. For example: const MYCONST = 20
+
+All three attempts will lead Javascript to throw an error. Values declared using the *const* keyword canont be reinitialised, redeclared or reassigned.
+
+## Arrow Functions
+
+In the preceding lesson you learned about anonymous functions.
+Here is an example used in that lesson:
+```javascript
+var sayHello = function() { alert("Hello"); };
+```
+A recent inclusion in Javascript is a more concise syntax for writing this sort of function, in which the arrow function (=>) is shorthand for anonymous function. These are generally known as *arrow* functions.
