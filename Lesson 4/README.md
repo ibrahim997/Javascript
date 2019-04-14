@@ -227,4 +227,6 @@ Remeber that parameters having default specified should awlays come after nondea
 
 In this lesson you learnt about the local and global scope of variable and how the scope of variable affects how functions work with them. You also found out the *this* keyword in the context of a function. Finally, you learnt how to make a function syntax more concise by using arrow functions.
 
+## Exercise
 
+Revisit the script from the previous Exercise in Lesson 3. Modify the script so that the temperature converstion function now has a default value of 0 for its argument. Add an extra button to the page so that, when clicked, calls the function without passing any argument. Ensure the script outputs 32 and that all the other buttons operate as they did previously.
