@@ -153,3 +153,78 @@ Here is an example used in that lesson:
 var sayHello = function() { alert("Hello"); };
 ```
 A recent inclusion in Javascript is a more concise syntax for writing this sort of function, in which the arrow function (=>) is shorthand for anonymous function. These are generally known as *arrow* functions.
+
+> Note
+### Lambda Functions
+There is a similarity between the arrow functions of Javascript and the Lambda functions available in other languages.
+
+----
+
+The preceding line of code could be written like this:
+```javascript
+var sayHello = () => alert('Hello");
+```
+Notice that you don't have to include the keyword function or in this case the curly braces.
+
+> Note 
+### The Fat Arrow
+The => symbol is often referred to as the *fat arrow* symbol.
+
+----
+
+In more general terms, arrow functions are written like this:
+```javascript
+param => statements/expression
+```
+First, lets look at *param*, the name of a parameter (or parameters) to be passed to the function. Where a function requires no arguments, as in the previous example of the alert box, you indicate this with an empty pair of parentheses ().
+
+If only one parameter is passed to the function, the parentheses aren't required; you can simply write something like this:
+```javascript
+myFunc = x => alert(x);
+```
+On the right side, you need curly braces only where more than one expression is included. Where there's only one statement or expression, like in the *alert()* example, they're not required.
+Here an example with two parameters:
+```javascript
+myFunc = (x,y) => alert(x + y);
+```
+More complex functions can use the familiar curly braces and return parameter, if required, as in this example:
+```javascript
+myFunc = (x, y, z) => {
+  let area = x * y +5;
+  let boxes = area / z;
+  return boxes;
+}
+```
+
+## Setting Default Parameters
+
+Sometimes its useful to have your functions assign a default value to a parameter where no argument is given.
+As an example, consider a function that output user messages:
+```javascript
+function warn(temp) {
+  alert("Warning:\nA Temperature of " + temp + " is too high");
+}
+```
+Programs can call this function to create the user message:
+```javascript
+warn(95);
+```
+The output of the script will be an alert dialog.
+
+On rare occasions you might want to change the wording to something more eye-catching. To do so you can rewrite the function to add an option to change part of the message. To specify a default parameter, you just assign the default value to the parameter in the function definition:
+```javascript
+function warn(temp, headline='Warning') {
+  alert(headline + "\nA Temperature of " + temp + " is too high");
+}
+```
+However, you can now, when required, change the message by overwriting the default argument for the second paramter, *headline*:
+```javascript
+watn(95, '***DANGER***');
+```
+Remeber that parameters having default specified should awlays come after nondeafult parameters in the function definition. If the default parameter is placed before non-default parameters, the deafult parameter might be overwritten; thus rendering the advantages of utilising default parameters to become obsolete.
+
+## Summary
+
+In this lesson you learnt about the local and global scope of variable and how the scope of variable affects how functions work with them. You also found out the *this* keyword in the context of a function. Finally, you learnt how to make a function syntax more concise by using arrow functions.
+
+
