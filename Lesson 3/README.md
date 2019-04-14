@@ -164,3 +164,12 @@ You need to add an *onClick* event handler to this button from which to call the
 The complete exmaple is shown in the file called "A_Function_To_Output_User_Messages.html".
 
 ## Returning Values from Functions
+
+How can you get information back from your functions? To achieve this, you can use a mechanism to collect data from a function call - the *return value*.
+Let's see how it works using a modified version of the *cube()* function:
+```javascript
+function cube(x) {
+  return x * x * x;
+}
+```
+Instead of using an *alert()* dialog within the function, as in the previous example, this time the required result is prefixed with the *return* keyword. To access this value from outstide the function, you simply assign to a variable the value returned by the function:
