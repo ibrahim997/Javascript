@@ -147,3 +147,20 @@ Here is the function:
   }
   ```
 The function *buttonReport* takes three arguments, those being the id, name and value of the button element that has been clicked on. With each of these three pieces of information, a short message is constructed. These three messages are then concatenated into a single string which is passed to the *alert()* method to pop open a dialog containing the information.
+
+> Tip
+### Special Characters
+You may have noticed the first two string have the element "\n" appended to the string; this is a **new line character**, forcing the message within the alert dialog to return to the left and begin a new line. Certain special characters like this one must be prefixed with "\" if they are to be correctly interpreted when they appear in the string. Such a prefixed character is known as an escape sequence.
+
+----
+
+To call the function, you put a button element on the HTML page, with its id, name and value defined:
+```html
+<input type="button" id="id1" name="Button 1" value="Something" />
+```
+
+You need to add an *onClick* event handler to this button from which to call the function. Here, you can use the *this* keyword as discussed in Lesson 2.
+
+The complete exmaple is shown in the file called "A_Function_To_Output_User_Messages.html".
+
+## Returning Values from Functions
