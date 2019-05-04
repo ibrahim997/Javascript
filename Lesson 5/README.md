@@ -35,3 +35,11 @@ The return value from a *prompt()* dialog depends on what option the user takes:
 * If the user types in input and clicks OK or presses Enter, the user input string is returned.
 * If the user clicks OK or Enter, without typing anything into the prompt dialog, the method returns the default response (if any), as optionally specified in the second argument passed to *prompt()*.
 * If the user dismisses the dialog (that is, clicking Cancel or pressing Escape), then the *prompt()* method returns *null*.
+
+> Note
+### The *null* Value
+Javascript uses the *null* value on certain occassions to denote an empty value. When treated as a number, it takes the value 0; when used as a string, it evaluates to empty string (""); and when used in a Boolean value, it becomes *false*.
+
+----
+
+## Selecting Elements by Their ID
