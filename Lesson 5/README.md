@@ -44,13 +44,13 @@ Javascript uses the *null* value on certain occassions to denote an empty value.
 
 ## Selecting Elements by Their ID
 To select an element of your HTML page having a specific ID, all you need to do is call the document object's *getElementById()* method, specifying as an argument the ID of the required element. The method returns the DOM object corresponding to the page element with the specified ID.
-Let's look at an example. Suppose your web page contains a <div> element.
+Let's look at an example. Suppose your web page contains a *div* element.
 ```html
 <div id="div1">
   ... Content of DIV element
 </div>
 ```
-In your Javascript code, you can access this *<div>* element using *getElementById()*, passing the required ID to the method as an argument.
+In your Javascript code, you can access this *div* element using *getElementById()*, passing the required ID to the method as an argument.
 ```javascript
 var myDiv = document.getElementById("div1");
 ```
@@ -69,4 +69,4 @@ A handy property that exists for many DOM objects, *innerHTML* allows you to get
   <p>Here is some original text"</p>
 </div>
 ```
-You can access the HTML content of the *<div>* element using a combination of *getElementById()* and *innerHTML*.
+You can access the HTML content of the *div* element using a combination of *getElementById()* and *innerHTML*.
