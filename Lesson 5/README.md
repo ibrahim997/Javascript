@@ -345,3 +345,28 @@ This examples calls *Math.random()*, *Math.max()*, and *Math.round()* simply by 
 We are going to create a script to get the current date and time when the page is loaded. You can also implement a button to reload the page to refresh the time and date information.
 
 Take a look at reading_date_time.html.
+
+The first statement in the function *tellTime()* creates a new *Date* object called *now*. Since the object is created without passing any parameters to Date(), it will have properties pertaining to the current date and time at the moment of its creation.
+```javascript
+var now = new Date();
+```
+You can access the individual parts of the time and date using *getDate()*, *getMonth()*, and similar methods. As you do so, you assemble the output message as a string stored in the variable *out*:
+```javascript
+out += "<br />Date: " + now.getDate();
+out += "<br />Month: " + now.getMonth();
+out += "<br />Year: " + now.getFullYear();
+out += "<br />Hours: " + now.getHours();
+out += "<br />Minutes: " + now.getMinutes();
+out += "<br />Seconds: " + now.getSeconds();
+```
+Finally, you use *getElementById()* to select the (initally empty) *div* element having *id="div1"*, and write the contents of variable *out* into it using the *innerHTML* method:
+```javascript
+document.getElementById("div1").innerHTML = out;
+```
+The function *tellTime()* is called by a small script embedded in the *body* part of the page:
+```html
+<script>
+    tellTime();
+</script>
+```
+
