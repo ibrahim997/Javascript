@@ -208,3 +208,42 @@ var d2 = new Date(95,9,222) // 22nd October 1995 00:00:00
 var d3 = new Date(95,9,22,10,57,0) // 22nd October 1995 10:57:00
 ```
 
+## Setting and Editing Dates and Times
+The *Date* object has an extensive list of methods for setting or editing the various parts of the date and time:
+```javascript
+var mydate = new Date(); // Current date and time
+document.write("Object created on day number " + mydate.getDay() + "<br />");
+mydate.setDate(15); // Change the day of month to the 15th
+document.write("After amending date to the 15th, the day number is " + mydate.getDay());
+```
+The preceding code snippet initially creates the object *mydate* representing the date and time of its creation, but with the day of the month subsequently changed to the 15th; if you retrieve the day of the week before and after this operation, you'll see that it has been correctly recalculated to take account of the changed date:
+```javascropt
+// Result:
+// Object created on day number 5
+// After amending date to 15th, the day number is 0
+```
+You can also carry out date and time arthimetic, letting the *Date* object do all the heavy lifting:
+```javascript
+var mydate = new Date();
+document.write("Created: " + mydate.toDateString() + " " + mydate.ToTimeString() + "<br />");
+mydate.setDate(mydate.getDate(0 + 33); // Add 33 days to the 'date' part
+document.write("After adding 33 days: " + mydate.toDteString() + " " + mydate.toTimeString());
+```
+The preceding example calculates a date 33 days in the future, automatically amending the day, month, and/or year as necessary. Note the use of *toDateString()* and *toTimesString()* they are useful methods for converting dates into a readable format.
+
+## Simplifying Calculation with the *Math* Object
+Javascript's *Math* object can save you a lot of work when performing calculations that frequently occur.
+
+Unlike *Date* object, the *Math* object does not need to be created before use; it already exists, you can its methods directly.
+
+Table below shows some of the methods available.
+Method | Description
+--- | ---
+*ceil(n)* | Returns *n* rounded up to the nearest whole number
+*floor(n)* | Returns *n* rounded down to the nearest whole number
+*max(a,b,c,..)* | Returns the largest number
+*min(a,b,c,..)* | Returns the smallest number
+*round(n)* | Returns *n* rounded up or down to the nearest whole number
+*random()* | Returns a random number between 0 and 1
+
+Let's work through some examples.
