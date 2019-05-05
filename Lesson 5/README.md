@@ -70,3 +70,15 @@ A handy property that exists for many DOM objects, *innerHTML* allows you to get
 </div>
 ```
 You can access the HTML content of the *div* element using a combination of *getElementById()* and *innerHTML*.
+```javascript
+var myDivContents = document.getElementById("div1").innerHTML;
+```
+The variable will now contain the string value:
+```javascript
+"<p>Here is some originl text</p>"
+```
+You can also use *innerHTML* to set the contents of a chosen element:
+```javascript
+document.getElementById("div1").innerHTML = "<p>Here is some new text instead!</p>";
+```
+Executing this code snippet will erase the previous HTML content of the *div* element and replaces it with the new string.
