@@ -55,3 +55,18 @@ In your Javascript code, you can access thtis <div> element using *getElementByI
 var myDiv = document.getElementById("div1");
 ```
 You now have access to the chosen page element and all its properties and methods.
+
+> Caution
+### Make Surer There is an ID Value
+The page element must have its ID attribute set. Because ID values of HTML page elements are required to be unique, the method should always return a single page element, provided a matching ID is found.
+
+----
+
+## The *innerHTML* Property
+A handy property that exists for many DOM objects, *innerHTML* allows you to get or set the value of the HTML content inside a particular page element.
+```html
+<div id="div1">
+  <p>Here is some original text"</p>
+</div>
+```
+You can access the HTML content of the <div> element using a combination of *getElementById()* and *innerHTML*.
