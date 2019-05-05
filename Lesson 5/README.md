@@ -306,3 +306,42 @@ will work correctly.
 ----
 
 ## Mathematical Constants
+Various often-used mathematical constants are available as properties of *Math*. They are listed below.
+
+Constant | Description
+--- | ---
+E | Base of natural logs, approx. 2.718
+LN2 |  Natural log of 2, approx. 0.693
+LN10 | Natural log of 10, approx. 2.302
+LOG2E | Base 2 log of E, approx. 1.442
+LOG10E | Base 10 log of E, approx. 0.434
+PI | Approx. 3.14159
+SQRT1_2 | 1 over the square root of 2, approx.0.707
+SQRT2 | Square root of 2, approx. 1.414
+
+These constants can be used directly in your calculations:
+```javascript
+var area = Math.PI * radius * radius; // Area of circle
+var circumference = 2 * Math.PI * radius; // Circumference
+```
+
+## The *with* Keyword
+Although you can use the *with* keyword with any object, the *Math* object is an ideal object to use as an example. By using *with*, you can save yourself time.
+
+The keyword *with* takes an object as an argument and is followed by a code block wrapped in braces. The statements within that code block can call methods without specifying an object, and Javascript assums that those methods belong to the object passed as an argument.
+
+Here is an example:
+```javascript
+with (Math) {
+  var myRand = random();
+  var biggest = max(3,4,5);
+  var height = round(76.35);
+}
+```
+This examples calls *Math.random()*, *Math.max()*, and *Math.round()* simply by using the method names, because all method calls in the code block have been associated with the *Math* object.
+
+## Try It Yourself
+### Reading the Date and Time
+We are going to create a script to get the current date and time when the page is loaded. You can also implement a button to reload the page to refresh the time and date information.
+
+Take a look at reading_date_time.html.
