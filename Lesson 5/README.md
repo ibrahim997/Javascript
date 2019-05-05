@@ -140,4 +140,71 @@ location.href =  'www.example.com';
 ```
 Using this technique to transport the user to a new page maintains the original page in the browser history list, so the user can return simply by using the browser's Back button.
 
-If you prefer
+If you prefer that the sending page is removed from the history list and replaced with the new URL, you can instead use the location object's *replace* method:
+```javascript
+location.replace('www.newpage.com');
+```
+This method replaces the old URL with the new one both in the browser and in the history list.
+
+## Reloading the Page
+To reload the current page into the browser - the equivalent of having the uesr click the "reload" button - you can use the *reload* method:
+```javascript
+location.reload();
+```
+
+> Tip
+### Avoiding Cache Problems
+Using *reload()* without any arguments retrieves the current page from the browser's cache, if it's available there. To avoid this and get the page directly from the server, you can call *reload()* with the argument *true*:
+```javascript
+document.reload(true);
+```
+
+----
+
+## Obtaining Browser Information - The *navigator* Object
+Whereas the *location* object stores information about the current URL loaded in the browser, the *navigator* object's properties contain data about the browser application itself.
+
+## Try It Yourself
+### Displaying Information Using the *navigator* Object
+We're going to write a script that allows you to find what the *naviagtor* object knows about your own browsing setup. Use your editor to create a file navigator.html containing the code from using_nav_object.html containing the code.
+
+The result is that the object provides, at best, an unreliable source of information about the user's platform. Not all properties are supported in all browsers, and the names reported for browser type and version rarely what you would intuitively expect.
+
+## Using Dates and Times
+The *Date* object is used to work with dates and times. There is no *Date* object created for you as part of the DOM, as was the case with examples thus far. Instead you create your own *Date* object as when you need them. Each *Date* object you create can represent a different date and time.
+
+## Creating a *Date* Object with the Current Date and Time
+The simplest way to create a new *Date* object containing information about the date and time looks like this:
+```javascript
+var mydate = new Date();
+```
+The variable *mydate* is an object containing information about the date and time at the moment the object was created. Javascript has a long list of methods for retrieving, setting and editing data within Date objects. Let's look at a few simple examples:
+```javascript
+var year = mydate.getFullYear(); // Four-digit year e.g. 2019
+var month = mydate.getMonth(); // Month number 0 - 11; 0 is Jan, etc.
+var date = mydate.getDate(); // Day of the month 1 - 31
+var day = mydate.getDay(); // Day of the week 0 - 6; Sunday = 0, etc.
+var hours = mydate.getHours(); // Hours part of the time, 0 - 23
+var minutes = mydate.getMinutes(); // Minutes part of the time, 0 - 59
+var seconds = mydate.getSeconds(); // Seconds par of the time, 0 -59
+```
+
+## Creating a *Date* Object with a Given Date and Time
+You can easily create *Date* objects representing arbitrary dates and times by passing arguments to the *Date()* statement. There are several ways to do this:
+```javascript
+new Date(milliseconds) // Milliseconds since Jan 1st 1970
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+```
+Here are some examples.
+
+You can use a date string like this:
+```javascript
+var d1 = new Date("October 22, 1995 10:57:22");
+```
+When you use separate arguments for the parts, trailing arguments are optional; any missing arguments replaced with zero:
+```javascript
+var d2 = new Date(95,9,222) // 22nd October 1995 00:00:00
+var d3 = new Date(95,9,22,10,57,0) // 22nd October 1995 10:57:00
+```
+
