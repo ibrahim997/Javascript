@@ -118,5 +118,15 @@ The properties are listed in the Table below.
 
 Property | Description
 --- | ---
-*location.href* | Content Cell
-Content Cell | Content Cell
+*location.href* | 'http://www.example.com:8080/tools/display.php?section=435#list'
+*location.protocol* | 'http:'
+*location.host* | 'www.example.com:8080'
+*location.hostname* | 'www.example.com'
+*location.port* | '8080'
+*location.pathname* | '/tools/display.php?'
+*location.search* | '?section=435'
+*location.hash* | '#list'
+
+----
+
+## Navigating Using the *location* Object
