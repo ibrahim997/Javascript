@@ -248,3 +248,61 @@ Method | Description
 *random()* | Returns a random number between 0 and 1
 
 Let's work through some examples.
+
+## Rounding
+The methods *ceil(), *floor()*, and *round()* are useful for truncating the decimal parts of numbers:
+```javascript
+var myNum1 = 12.55;
+var myNum2 = 12.45;
+alert(Math.floor(myNum1)); // Shows 12
+alert(Math.ceil(myNum2)): // Shows 13
+alert(Math.round(myNum1)); // Shows 13
+alert(Math.round(myNum2)); // Shows 12
+```
+Note that when you use *round()*, if the fractional part of the number is 0.5 or greater, the number is rounded to the next highest integer. If the fractional part is less than 0.5, the number is rounded to the next lowest integer.
+
+## Finding Minimum and Maximum
+You can use *min()* and *max()* to pick the largest and smallest number from a list:
+```javascript
+var ageDavid = 23;
+var ageMary = 27;
+var ageChris = 31;
+var ageSandy =19;
+document.write("The youngest person is " + Math.min(ageDavid, ageMary, ageChris, ageSandy) + " years old<br />");
+document.write("The oldest person is " + Math.max(ageDavid, ageMary, ageChris, ageSandy) + " years old<br />");
+```
+
+## Generating Random Numbers
+To generate a random number, you can use *Math.random()*, which generates a random number beween 0 and 1.
+
+Normally, you would specify the possible range of numbers; for example, you might want to generate a random number between 0 and 100.
+
+As *Math.random()* generates a random number between 0 and 1, it's helpful to wrap it in a small function that suits your needs. The following function takes the *Math* object's randomly generated number, scales it up by multiplying by the variable range (passed to the function as an argument), and finally uses *round()* to remove any fractional part:
+```javascript
+function myRand(range) {
+  return Math.round(Math.random() * range);
+}
+```
+To generate a random integer between 0 and 100, you simply call:
+```javascript
+myRand(100);
+```
+
+> Caution
+### Use *Math* Methods Directly
+You always use *Math* methods directly,for example, *Math.floor()* , rather than as a method of an object you created. In other words:
+```javascript
+var myNum = 24.77;
+myNum.floor();
+```
+The code would provoke a Javascript error.
+
+Instead,
+```html
+<p>Math.floor(myNum);</p>
+```
+will work correctly.
+
+----
+
+## Mathematical Constants
