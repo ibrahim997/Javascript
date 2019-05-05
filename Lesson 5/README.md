@@ -374,3 +374,12 @@ To refresh the page, simply reload the page into the browser. At this point, the
 <input type="button" onclick="location.reload()" value="Refresh" />
 ```
 Remember that Javascript counts months starting from 0 (Jan) and ending in 11 (Decemeber).
+
+## Summary
+You saw how to use the *window* object's modal dialogs to exchange information with the user.
+
+You also learned how to select a page elements by their ID using the *document.getElementById()* method, and how to get and set the HTML inside a page element using the *innerHTML* property.
+
+In addition, you worked with the browser information from the *navigator* object and page URL information from the *location* object.
+
+Finally, you saw how to use the *Date* and *Math* objects.
