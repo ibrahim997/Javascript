@@ -237,6 +237,7 @@ Javascript's *Math* object can save you a lot of work when performing calculatio
 Unlike *Date* object, the *Math* object does not need to be created before use; it already exists, you can its methods directly.
 
 Table below shows some of the methods available.
+
 Method | Description
 --- | ---
 *ceil(n)* | Returns *n* rounded up to the nearest whole number
