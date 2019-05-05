@@ -50,7 +50,7 @@ Let's look at an example. Suppose your web page contains a <div> element.
   ... Content of DIV element
 </div>
 ```
-In your Javascript code, you can access thtis <div> element using *getElementById()*, passing the required ID to the method as an argument.
+In your Javascript code, you can access this *<div>* element using *getElementById()*, passing the required ID to the method as an argument.
 ```javascript
 var myDiv = document.getElementById("div1");
 ```
@@ -69,4 +69,4 @@ A handy property that exists for many DOM objects, *innerHTML* allows you to get
   <p>Here is some original text"</p>
 </div>
 ```
-You can access the HTML content of the <div> element using a combination of *getElementById()* and *innerHTML*.
+You can access the HTML content of the *<div>* element using a combination of *getElementById()* and *innerHTML*.
