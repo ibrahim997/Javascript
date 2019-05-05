@@ -104,3 +104,8 @@ The method can alternatively accept a string, which it uses to find the first ma
 history.go("example.com"); // Go to the nearest URL in the history
                            // List that contains 'example.com'
 ```
+
+## Using the *location* Object
+The *location* object contains information about the URL of the currently loaded page.
+You can think of the page URL as a series of parts:
+> [protocol]//[hostname]: [port]/[pathname][search][hash]
