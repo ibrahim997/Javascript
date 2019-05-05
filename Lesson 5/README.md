@@ -109,8 +109,10 @@ history.go("example.com"); // Go to the nearest URL in the history
 The *location* object contains information about the URL of the currently loaded page.
 You can think of the page URL as a series of parts:
 > [protocol]//[hostname]: [port]/[pathname][search][hash]
+----
 Here is a sample URL:
 > http://www.example.com:8080/tools/display.php?section=435#list
+----
 The list of properties of the location object includes data concerning the various parts of the URL.
 The properties are listed in the Table below.
 Property      | Description
