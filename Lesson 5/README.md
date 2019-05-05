@@ -130,3 +130,10 @@ Property | Description
 ----
 
 ## Navigating Using the *location* Object
+There are two ways to take a user to a new page using the *location* object.
+First you can directly set the *href* property of the object:
+```javascript
+location.href =  'www.example.com';
+```
+Using this technique to transport the user to a new page maintains the original page in the browser history list, so the user can return simply by using the browser's Back button.
+If you pre
