@@ -23,6 +23,7 @@ Note that here, though, you pass the returned valye of *true* or *false* to a va
 
 ## *prompt()*
 The *prompt()* method yet another way to open a modal dialog. In this case, the dialog, invites the user to enter information.
+
 A *prompt()* dialog is called in just the same manner as *confirm()*:
 ```javascript
 var answer = prompt("What is your full name");
@@ -44,6 +45,7 @@ Javascript uses the *null* value on certain occassions to denote an empty value.
 
 ## Selecting Elements by Their ID
 To select an element of your HTML page having a specific ID, all you need to do is call the document object's *getElementById()* method, specifying as an argument the ID of the required element. The method returns the DOM object corresponding to the page element with the specified ID.
+
 Let's look at an example. Suppose your web page contains a *div* element.
 ```html
 <div id="div1">
@@ -85,6 +87,7 @@ Executing this code snippet will erase the previous HTML content of the *div* el
 
 ## Accessing Browser History
 The browser's history is represented in Javascript by the *window.history* object, which is essentially a list of URLs previously visited. Its methods enable you to use the list, but not to manipulate URLs explicity.
+
 The only property owned by the *history* object is its length. You can use this property to find how many pages the user has visited:
 ```javascript
 alert("You've visited: " + history.length + " web pages in this browser session");
@@ -136,4 +139,5 @@ First you can directly set the *href* property of the object:
 location.href =  'www.example.com';
 ```
 Using this technique to transport the user to a new page maintains the original page in the browser history list, so the user can return simply by using the browser's Back button.
-If you pre
+
+If you prefer
