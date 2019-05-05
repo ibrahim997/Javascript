@@ -115,7 +115,8 @@ Here is a sample URL:
 ----
 The list of properties of the location object includes data concerning the various parts of the URL.
 The properties are listed in the Table below.
-Property      | Description
-------------- | -------------
-*location.href*  | Content Cell
-Content Cell  | Content Cell
+
+Property | Description
+--- | ---
+*location.href* | Content Cell
+Content Cell | Content Cell
