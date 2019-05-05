@@ -82,3 +82,25 @@ You can also use *innerHTML* to set the contents of a chosen element:
 document.getElementById("div1").innerHTML = "<p>Here is some new text instead!</p>";
 ```
 Executing this code snippet will erase the previous HTML content of the *div* element and replaces it with the new string.
+
+## Accessing Browser History
+The browser's history is represented in Javascript by the *window.history* object, which is essentially a list of URLs previously visited. Its methods enable you to use the list, but not to manipulate URLs explicity.
+The only property owned by the *history* object is its length. You can use this property to find how many pages the user has visited:
+```javascript
+alert("You've visited: " + history.length + " web pages in this browser session");
+```
+The *history* object has three methods.
+*forward()* and *back()* are equivalent to passing the Forward and Backward buttons on the browser; they take the user to the next or previous page in the history list.
+```javascript
+history.forward();
+```
+The third method, *go*, takes a single parameter. This can be an integer, positive or negative, and it takes the user to a relative place in the history list:
+```javascript
+history.go(-3); // Go back 3 pages
+history.go(2); // Go forward 2 pages
+```
+The method can alternatively accept a string, which it uses to find the first matching URL in the history list:
+```javascript
+history.go("example.com"); // Go to the nearest URL in the history
+                           // List that contains 'example.com'
+```
