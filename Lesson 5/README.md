@@ -369,4 +369,8 @@ The function *tellTime()* is called by a small script embedded in the *body* par
     tellTime();
 </script>
 ```
-
+To refresh the page, simply reload the page into the browser. At this point, the script runs again, creating a new instance of the *Date* object with the current date and time. Using the *location* object you can do the following to reload the page using a button:
+```html
+<input type="button" onclick="location.reload()" value="Refresh" />
+```
+Remember that Javascript counts months starting from 0 (Jan) and ending in 11 (Decemeber).
