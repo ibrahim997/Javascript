@@ -43,3 +43,15 @@ Javascript uses the *null* value on certain occassions to denote an empty value.
 ----
 
 ## Selecting Elements by Their ID
+To select an element of your HTML page having a specific ID, all you need to do is call the document object's *getElementById()* method, specifying as an argument the ID of the required element. The method returns the DOM object corresponding to the page element with the specified ID.
+Let's look at an example. Suppose your web page contains a <div> element.
+```html
+<div id="div1">
+  ... Content of DIV element
+</div>
+```
+In your Javascript code, you can access thtis <div> element using *getElementById()*, passing the required ID to the method as an argument.
+```javascript
+var myDiv = document.getElementById("div1");
+```
+You now have access to the chosen page element and all its properties and methods.
