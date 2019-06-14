@@ -52,3 +52,24 @@ Javascript has a range of methods available for use in manipulating numerical va
 > Note
 ### Primitive Value Can Use Methods
 So-called primitive values such as numbers are not objects so cannot have their own properties and methods. But Javascript treats primitive values as objects, thus enabling the execution of the methods described in this section.
+
+Let's dive into some of these methods.
+
+## *toString()*
+The *toString()* method returns a number as a character string. Let's look at how the conversion works.
+
+The method works just fine on either a variable or when directly applied to a numerical value:
+```javascript
+var num = 666;
+num.toString(); // Returns string "666"
+
+(666).toString(); // Returns string "666"
+```
+You can use *toString()* directly with an expression too:
+```javascript
+(333 * 2).toString(); // Returns string "666"
+```
+
+> Tip
+### Using a Radix with *toString()*
+The *toString()* method can optionally be pressed an argument, an integer between 2 and 36, as a radix value.
