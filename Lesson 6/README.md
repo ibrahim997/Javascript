@@ -5,5 +5,8 @@ We use the term *data type* to explain tha nature of the data that a variable co
 
 ## Numbers
 There are many different types of numbers, *natural numbers* (1,2,3,4..), *whole numbers* (simply add 0) and *negative numbers* which form the set of *integers*.
+To express numbers falling between integers, you commonly use a decimal point with one or more digits following it: (3.14159264). Such numbers are called *floating point* numbers indicating they have an arbitary number of digits before and after the decimal point, that is the decimal point can float to any location in the number.
 
+## Integers
+An integer is a whole number - positive, negative, or zero. In other words, an integer is a numerical value without a fractional part.
 
