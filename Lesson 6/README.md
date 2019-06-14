@@ -11,3 +11,10 @@ To express numbers falling between integers, you commonly use a decimal point wi
 ## Integers
 An integer is a whole number - positive, negative, or zero. In other words, an integer is a numerical value without a fractional part.
 
+## Floating-Point Numbers
+Floating-point numbers have a fractional part, even if that fractional part is zero. They can be represented in the traditional way or exponential notation.
+
+> Note
+### Exponential Notation
+In exponential notation, e, represents "times 10 to the power", so 35.4e5 can be read as 35.4 x 10^5. It provides a compact way of expressing numbers from the very large to the very small. 
+
