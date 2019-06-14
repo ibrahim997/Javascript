@@ -18,3 +18,17 @@ Floating-point numbers have a fractional part, even if that fractional part is z
 ### Exponential Notation
 In exponential notation, e, represents "times 10 to the power", so 35.4e5 can be read as 35.4 x 10^5. It provides a compact way of expressing numbers from the very large to the very small. 
 
+----
+
+## Hexadecimal, Binary and Octal Numbers
+Javascript also has the capability to handle hexadecimal (base 16), binary (base 2), and octal (base 8) numbers. In addition to the more familiar decimal (base 10) numbers.
+
+Hexadecimal numbers begin with the prefix 0x - for instance, 0xFF represents the number 255.
+
+Binary values are prefixed with 0b, such as 0b111, which represents 7.
+
+Octal (base 8) numbers are perhaps less common, but they too can be used in programs. You prefix an octal number with 0o (zero followed by lowercase letter o), so for instance 0o77 is the octal representation for 63.
+
+> Note
+### Unix-style File Permissions
+With Unix operating systems or one of its siblings such as Linux, or Mac OS. The read, write and execute (rwx) permissions allocated to files in such systems are each associated with the three bits of a binary number. 
