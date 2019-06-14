@@ -46,4 +46,9 @@ Octal Digit | Binary (rwx) | Permission
 
 ----
 
+## Global Methods
+Javascript has a range of methods available for use in manipulating numerical values. These are *global* methods; that is, they are available at any point in the code.
 
+> Note
+### Primitive Value Can Use Methods
+So-called primitive values such as numbers are not objects so cannot have their own properties and methods. But Javascript treats primitive values as objects, thus enabling the execution of the methods described in this section.
