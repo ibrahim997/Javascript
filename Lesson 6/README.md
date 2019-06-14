@@ -31,4 +31,19 @@ Octal (base 8) numbers are perhaps less common, but they too can be used in prog
 
 > Note
 ### Unix-style File Permissions
-With Unix operating systems or one of its siblings such as Linux, or Mac OS. The read, write and execute (rwx) permissions allocated to files in such systems are each associated with the three bits of a binary number. 
+With Unix operating systems or one of its siblings such as Linux, or Mac OS. The read, write and execute (rwx) permissions allocated to files in such systems are each associated with the three bits of a binary number. The resulting binaries are more often shown as octal values as follows:
+
+Octal Digit | Binary (rwx) | Permission
+--- | --- | ---
+0 | 000 | none
+1 | 001 | execute only
+2 | 010 | write only
+3 | 011 | write and execute
+4 | 100 | read only
+5 | 101 | read and execute
+6 | 110 | read and write
+7 | 111 | read, write, and execute
+
+----
+
+
